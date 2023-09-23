@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Gowun Dodum', sans-serif;
+    background-color: antiquewhite;
 }
 
 a {
@@ -43,7 +44,7 @@ header {
 }
 
 #logo-weather {
-    width: 200px;
+    flex-basis: 13%;
     display: flex;
     align-items: center;
 }

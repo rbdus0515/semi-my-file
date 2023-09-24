@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: antiquewhite;
+}
+
+button {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+section {
+    /* border : 1px solid black; */
+}
+
+/* -------------------------------- */
+/* 메인페이지 최상단 */
+#main-container {
+    position: relative;
+}
+
+#mainPage-img {
+    width: 1920px;
+}
+
+#title-container {
+    font-size: 96px;
+    position: absolute;
+    top: 20%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#info-btn {
+    width: 50px;
+    position: fixed;
+    top: 78%;
+    left: 98.5%;
+    transform: translate(-50%, -50%);
+}
+
+#top-btn {
+    width: 60px;
+    position: fixed;
+    top: 83.5%;
+    left: 98.5%;
+    transform: translate(-50%, -50%);
+}
+
+
+#mainPage-btn1 {
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: transparent;
+    background-color: #d9d9d9 70%;
+    /* opacity: 70%; 투명도 설정 */
+    color: black;
+    position: absolute;
+    top: 85%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#mainPage-btn2 {
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: transparent;
+    background-color: #d9d9d9 70%;
+    /* opacity: 70%; 투명도 설정 */
+    color: black;
+    position: absolute;
+    top: 91%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+/* ------------------------- */
+/* 메인페이지 추천 여행지 */
+#recommend-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 90px;
+}
+
+#category-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: 55px;
+}
+
+.category button {
+    width: 118px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+
+.category-empty {
+    flex-basis: 30%;
+}
+
+#recommend-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#recommend-img img {
+    width: 740px;
+    height: auto;
+}
+
+/* -------------------------- */
+/* 메인페이지 지역별 여행지 */
+#region-place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 90px;
+}
+
+/* 중복코드 */
+.region-place-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+#button-magin{
+    flex-basis: 7%;
+}
+
+.region-btn {
+    width: 225px;
+    height: 79px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.region-place {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#region-empty {
+    flex-basis: 5%;
+}
+
+.region-place img {
+    width: 240px;
+    height: auto;
+}
+
+.region-place p {
+    font-size: 20px;
+}

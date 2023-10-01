@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button, input {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+section {
+    /* border : 1px solid black; */
+}
+
+/* -------------------------- */
+
+/* 헤더 로고 */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#empty {
+    width:  95px;
+    height: 135px;
+}
+
+#logo {
+    width: 47px;
+    height: 57px;
+}
+
+/* ----------------------- */
+
+/* 메인 */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section {
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    width: 348px;
+    height: 46px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 25px;
+    color: black;
+}
+
+p span::after {
+    content: ' *';
+    color: red;
+}
+
+#id-section {
+    display: flex;
+    width: 488px;
+}
+
+#id-margin {
+    flex-basis: 7%;
+}
+
+#id-btn {
+    width: 100%;
+    max-width: 102px;
+    height: 46px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+}
+
+#profile-img {
+    width: 90px;
+}
+
+#profile-margin {
+    flex-basis: 7%;
+}
+
+#profile > div {
+    width: 220px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#signup-btn {
+    width: 488px;
+    height: 41px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+}

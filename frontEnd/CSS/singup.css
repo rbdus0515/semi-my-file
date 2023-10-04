@@ -25,20 +25,10 @@ section {
 /* -------------------------- */
 
 /* 헤더 로고 */
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-#empty {
-    width:  95px;
-    height: 135px;
-}
-
 #logo {
     width: 47px;
     height: 57px;
+    margin: 20px;
 }
 
 /* ----------------------- */
@@ -99,7 +89,7 @@ p span::after {
     height: 46px;
     border-radius: 15px;
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 #profile {
@@ -115,18 +105,35 @@ p span::after {
     flex-basis: 7%;
 }
 
-#profile > div {
+#profile > button {
     width: 220px;
     height: 46px;
     text-align: center;
     line-height: 46px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #signup-btn {
     width: 488px;
     height: 41px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 1rem;
+}
+
+button{
+    width: 488px;
+    height: 41px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+
+
+button:hover {
+    background-color: #868686;
+    color: #fff;
+    transition-duration: 0.3s;
 }

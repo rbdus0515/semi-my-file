@@ -32,7 +32,7 @@ html {
 }
 
 #mainPage-img {
-    width: 1920px;
+    width: 100vw;
 }
 
 #title-container {
@@ -176,7 +176,7 @@ html {
 .region-place {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #region-empty {
@@ -186,7 +186,6 @@ html {
 .region-place img {
     width: 220px;
     height: auto;
-    margin: 0 30px;
 }
 
 .region-place p {
@@ -197,4 +196,14 @@ button:hover {
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
+}
+
+@media all and (max-width:767px) {
+
+    .img > section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
 }

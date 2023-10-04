@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-body {
+body { 
     margin: 0;
     padding: 0;
     font-family: 'Gowun Dodum', sans-serif;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 button {
@@ -167,7 +167,7 @@ section {
 .region-place {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 #region-empty {
@@ -175,10 +175,11 @@ section {
 }
 
 .region-place img {
-    width: 240px;
+    width: 220px;
     height: auto;
+    margin: 0 30px;
 }
 
 .region-place p {
-    font-size: 20px;
+    font-size: 1em;
 }

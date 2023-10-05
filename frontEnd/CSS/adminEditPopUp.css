@@ -40,7 +40,19 @@ div, section, .container {
     display: flex;
 }
 
+label {
+    width: 80px;
+    height: 30px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
 #update-img {
     visibility: hidden;
-
 }

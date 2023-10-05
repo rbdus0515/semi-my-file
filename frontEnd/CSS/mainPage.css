@@ -120,7 +120,7 @@ html {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    height: 150px;
+    height: 230px;
     margin-top: 55px;
 }
 
@@ -142,7 +142,7 @@ html {
 }
 
 #recommend-img > img {
-    width: 740px;
+    width: 640px;
     height: auto;
 }
 
@@ -197,7 +197,7 @@ img {
 }
 
 #button-magin{
-    flex-basis: 7%;
+    flex-basis: 15%;
 }
 
 .region-btn {
@@ -214,7 +214,7 @@ img {
     justify-content: space-between;
 }
 
-#region-empty {
+.region-empty {
     flex-basis: 20%;
 }
 

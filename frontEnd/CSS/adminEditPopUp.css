@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: antiquewhite;
+}
+
+button {
+    font-family: 'Gowun Dodum', sans-serif;
+    border: 0.5px solid #a6a6a6;
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+
+
+div, section, .container {
+    border : 1px solid black;
+}
+
+/* --------------------------------------------------------------- */
+
+.container {
+    width: 800px;
+    height: 525px;
+    display: flex;
+}
+
+#title-category-place-imgFile {
+    display: flex;
+
+}
+
+#input-place {
+    width: 130px;
+    height: 20px;
+    display: flex;
+}
+
+#update-img {
+    visibility: hidden;
+
+}

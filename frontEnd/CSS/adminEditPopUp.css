@@ -30,6 +30,10 @@ div, section {
 }
 /* -------------------------------- */
 /* 닫기 버튼 */
+#close-contaier {
+    
+}
+
 #close-btn {
     background-color: transparent;
     border: none;

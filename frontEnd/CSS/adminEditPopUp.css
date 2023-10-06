@@ -17,26 +17,47 @@ button {
 }
 
 
-div, section, .container {
+div, section {
     border : 1px solid black;
 }
 
-#div1, #div2 {
-    width: 50%;
+#div1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+/* -------------------------------- */
+/* 닫기 버튼 */
+#close-btn {
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+  
+#close-btn > img{
+    width: 1rem;
 }
 
 /* --------------------------------------------------------------- */
 /* 장소명, 카테고리, 지역, 이미지 파일 선택 */
 .container {
     width: 800px;
-    height: 525px;
+    height: 500px;
     display: flex;
+    background-color: white;
 }
 
 #title-category-place-imgFile {
+    width: 100%;
+    flex-basis: 6%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
 #input-place {
@@ -77,6 +98,8 @@ label:hover {
 /* ------------------------------------------- */
 /* 위도, 경도 */
 #placeZY {
+    width: 100%;
+    flex-basis: 7%;
     display: flex;
     justify-content: space-around;
 }
@@ -99,14 +122,22 @@ label:hover {
 /* 여행지 이미지 */
 
 #place-img {
+    display: flex;
+    justify-content: center;
+    width: 343px;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 /* --------------------------------------------- */
 /* 링크, 업로드 */
 #info-url-upload-btn {
+    width: 100%;
+    flex-basis: 9%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #info-url-upload-btn div {
@@ -129,4 +160,46 @@ label:hover {
     background-color: #a6a6a6;
     border-radius: 10px;
     border: none;
+}
+/* -------------------------------- */
+/* 설명, 후기 */
+#div2 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 10px;
+}
+
+#place-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #a6a6a6;
+    margin-top: 10px;
+    flex-basis: 40%;
+    border-radius: 10px;
+}
+
+#input-info {
+    display: flex;
+    width: 95%;
+    height: 85%;
+    border-radius: 10px;
+}
+
+#review-controll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a6a6a6;
+    margin-top: 15px;
+    flex-basis: 52%;
+    border-radius: 10px;
+}
+
+#review-controll p {
+    background-color: #e6e6e6;
+    width: 90%;
+    border-radius: 10px;
 }

@@ -14,65 +14,71 @@
 </head>
 <body>
     <div class="container">
-        <div>
+        <div id="div1">
             <section id="title-category-place-imgFile">
+
                 <input id="input-place" type="text" placeholder="여의도 한강공원">
-                <form>
-                    <select>
-                        <option selected>카테고리</option>
-                        <option>20대</option>
-                        <option>30대</option>
-                        <option>40대</option>
-                        <option>50대 이상</option>
-                        <option>혼자</option>
-                        <option>친구</option>
-                        <option>연인</option>
-                        <option>가족</option>
-                        <option>봄</option>
-                        <option>여름</option>
-                        <option>가을</option>
-                        <option>겨울</option>
-                        <option>바다</option>
-                        <option>도심</option>
-                        <option>전통</option>
-                        <option>힐링</option>
-                        <option>액티비티</option>
-                    </select>
-                </form>
-                <form>
-                    <select>
-                        <option selected>지역</option>
-                        <option>서울</option>
-                        <option>경기/인천</option>
-                        <option>강원</option>
-                        <option>전라</option>
-                        <option>경상</option>
-                        <option>충청</option>
-                        <option>제주</option>
-                    </select>
-                </form>
-                <label for="update-img">
+                    
+                <select>
+                    <option selected>카테고리</option>
+                    <option>20대</option>
+                    <option>30대</option>
+                    <option>40대</option>
+                    <option>50대 이상</option>
+                    <option>혼자</option>
+                    <option>친구</option>
+                    <option>연인</option>
+                    <option>가족</option>
+                    <option>봄</option>
+                    <option>여름</option>
+                    <option>가을</option>
+                    <option>겨울</option>
+                    <option>바다</option>
+                    <option>도심</option>
+                    <option>전통</option>
+                    <option>힐링</option>
+                    <option>액티비티</option>
+                </select>
+
+                <select>
+                    <option selected>지역</option>
+                    <option>서울</option>
+                    <option>경기/인천</option>
+                    <option>강원</option>
+                    <option>전라</option>
+                    <option>경상</option>
+                    <option>충청</option>
+                    <option>제주</option>
+                </select>
+
+                <label for="update-img-btn">
                     파일선택
                 </label>
-                <input type="file" id="update-img">
+                <input type="file" id="update-img-btn">
+
             </section>
 
-            <section>
-                <div>위도</div>
-                <div>경도</div>
+            <section id="placeZY">
+                <div>위도 : <input class="input-placeZY"></div>
+                <div>경도 : <input class="input-placeZY"></div>
             </section>
 
-            <section>
+            <section id="place-img">
                 <img>
             </section>
 
-            <section>
-                링크 : <input type="url" placeholder="DB 연결 링크 가져오기">
-                <button type="button"></button>
+            <section id="info-url-upload-btn">
+                <div>링크 : 
+                    <input id="place-info-url" type="url" placeholder="DB 연결 링크 가져오기">
+                </div>
+                <button type="button" id="upload-btn">업로드</button>
             </section>
         </div> 
         
-        <div></div> 
+        <div id="div2">
+            <section>설명</section>
+            <section>후기</section>
+        </div> 
     </div>
 </body>
 </html>

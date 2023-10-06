@@ -21,8 +21,12 @@ div, section, .container {
     border : 1px solid black;
 }
 
-/* --------------------------------------------------------------- */
+#div1, #div2 {
+    width: 50%;
+}
 
+/* --------------------------------------------------------------- */
+/* 장소명, 카테고리, 지역, 이미지 파일 선택 */
 .container {
     width: 800px;
     height: 525px;
@@ -31,28 +35,98 @@ div, section, .container {
 
 #title-category-place-imgFile {
     display: flex;
-
+    align-items: center;
+    justify-content: space-around;
 }
 
 #input-place {
-    width: 130px;
-    height: 20px;
-    display: flex;
+    width: 120px;
+    height: 25px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    border: none;
+}
+
+#title-category-place-imgFile > select {
+    width: 80px;
+    height: 25px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    border: none;
 }
 
 label {
-    width: 80px;
-    height: 30px;
+    width: 60px;
+    height: 25px;
     background-color: #a6a6a6;
     border-radius: 10px;
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 label:hover {
     cursor: pointer;
 }
 
-#update-img {
-    visibility: hidden;
+#update-img-btn {
+    display: none;
+}
+
+/* ------------------------------------------- */
+/* 위도, 경도 */
+#placeZY {
+    display: flex;
+    justify-content: space-around;
+}
+
+#placeZY div {
+    display: flex;
+    align-items: center;
+}
+
+.input-placeZY {
+    width: 100px;
+    height: 25px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+/* ------------------------------------------ */
+/* 여행지 이미지 */
+
+#place-img {
+}
+
+/* --------------------------------------------- */
+/* 링크, 업로드 */
+#info-url-upload-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info-url-upload-btn div {
+    display: flex;
+    align-items: center;
+}
+
+#place-info-url {
+    width: 250px;
+    height: 25px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+#upload-btn {
+    width: 60px;
+    height: 25px;
+    background-color: #a6a6a6;
+    border-radius: 10px;
+    border: none;
 }

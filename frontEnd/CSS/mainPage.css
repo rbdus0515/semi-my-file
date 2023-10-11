@@ -203,6 +203,7 @@ img {
     height: 65px;
     border-radius: 20px;
     font-size: 1.5rem;
+    border: none;
 }
 
 .region-place {
@@ -229,6 +230,20 @@ button:hover {
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
+}
+
+.place-move-motion > img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.place-move-motion > img {
+    transition: 0.3s ease-in-out;
+}
+
+#bottom-margin {
+    height: 300px;
 }
 
 @media all and (max-width:767px) {

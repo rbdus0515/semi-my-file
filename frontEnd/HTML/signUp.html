@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+
+    <link rel="stylesheet" href="/CSS/signUp.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="#"><img id="logo" src="/img/로고.png"></a>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <img id="input-logo" src="/img/로고.png">
+        </section>
+
+        <!-- 회원가입 input -->
+        <form>
+            <section id="input-area">
+                <section class="input-section">
+                        <p><span>아이디</span></p>
+                    <section id="id-section">
+                        <input type="text" placeholder="아이디 입력">
+                    </section>
+                    <div></div>
+                </section>
+                
+                <section class="input-section">
+                    <p><span>비밀번호</span></p>
+                    <input type="password" placeholder="비밀번호 입력">
+                </section>
+                
+                <section class="input-section">
+                    <p><span>비밀번호 확인</span></p>
+                    <input type="password" placeholder="비밀번호 재입력">
+                    <div></div>
+                </section>
+                
+                <section class="input-section">
+                    <p><span>이름</span></p>
+                    <input type="text" placeholder="이름 입력">
+                    <div></div>
+                </section>
+                
+                <section class="input-section">
+                    <p>생년월일</p>
+                    <input type="date" placeholder="아이디 입력">
+                </section>
+                
+                <section class="input-section">
+                        <p><span>이메일</span></p>
+                    <section id="id-section">
+                        <input type="email" placeholder="이메일 입력">
+                        <section id="id-margin"></section>
+                        <button id="email-btn">인증번호<br>받기</button>
+                    </section>
+                    <div></div>
+                </section>
+                
+                <section class="input-section">
+                    <p>이메일 인증번호 확인</p>
+                    <input type="text">
+                    <div></div>
+                </section>
+
+                <section class="input-section">
+                    <p>전화번호</p>
+                    <input type="tel" placeholder="'-' 기호 포함">
+                </section>
+                
+                <section class="input-section">
+                    <p><span>닉네임</span></p>
+                    <input type="text" placeholder="닉네임 입력">
+                    <div></div>
+                </section>
+
+                
+                <section class="input-section" id="profile">
+                    <img id="profile-img" src="/img/프로필아이콘.png">
+                    <section id="profile-margin"></section>
+                    <label for="upload-img-btn">
+                        프로필 이미지 업로드
+                    </label>
+                    <input type="file" id="upload-img-btn">
+                </section>
+                
+                <button id="signup-btn">회원가입</button>
+                <div id="empty"></div>
+            </section>
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -73,7 +73,6 @@ html {
     height: 50px;
     border-radius: 30px;
     border: transparent;
-    /* opacity: 70%; 투명도 설정 */
     position: absolute;
     top: 87%;
     left: 90%;
@@ -87,7 +86,6 @@ html {
     height: 50px;
     border-radius: 30px;
     border: transparent;
-    /* opacity: 70%; 투명도 설정 */
     position: absolute;
     top: 93.5%;
     left: 90%;

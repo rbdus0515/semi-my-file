@@ -6,16 +6,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Gowun Dodum', sans-serif;
-    background-color: antiquewhite;
 }
 
 a {
     color: black;
     text-decoration: none;
-}
-
-section {
-    /* border : 1px solid black; */
 }
 
 /* -------------------- */
@@ -34,8 +29,7 @@ header {
     height: 72px;
     max-width: 1510px;
     border-radius: 0 0 20px 20px;
-    background-color: white;
-    /* opacity: 0.5; 투명도 설정 */
+    background-color: rgb(255, 255, 255, 0.7);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -56,6 +50,7 @@ header {
     flex-basis: 25%;
 }
 
+/* 검색부분 input,img */
 .search-bar {
     display: flex;
     position: relative;
@@ -85,6 +80,7 @@ header {
     height: auto;
 }
 
+/* 고객지원, 커뮤니티, 마이페이지, 로그아웃 버튼 */
 #menu-Btn {
     display: flex;
     align-items: center;

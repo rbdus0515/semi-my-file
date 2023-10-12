@@ -246,6 +246,8 @@ button:hover {
     height: 300px;
 }
 
+
+
 @media all and (max-width:767px) {
 
     .region-empty {

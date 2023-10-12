@@ -171,3 +171,8 @@ label:hover {
     color: #fff;
     transition-duration: 0.3s;
 }
+
+
+/* 메세지 색상 지정 */
+.confirm{ color : green; }
+.error{ color : red; }

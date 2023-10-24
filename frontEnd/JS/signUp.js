@@ -12,6 +12,52 @@ const checkObj = {
 const memberId = document.getElementById("memberId");
 const idMessage = document.getElementById("idMessage");
 
+memberId.addEventListener("input", () => {
+
+    if(memberId.value.trim().length == 0){
+        memberId.value = ""; 
+
+        idMessage.innerText = "영어,숫자,특수문자(!,@,#,-,_) 6~20글자 사이로 입력해주세요.";
+
+        // confirm, error 클래스 삭제해서 검정 글씨로 만들기
+        idMessage.classList.remove("confirm", "error");
+
+        checkObj.memberId = false; // 빈칸 == 유효 X
+        return;
+    }
+
+    const regEx = /^[a-zA-Z0-9\!\@\#\-\_]{6,20}$/;
+
+    if(  regEx.test(memberId.value)  ){ // 유효한 경우
+
+        fetch("/dupCkeck/email?email=" + memberId.value)
+        .then(res => res.text())
+        .then(count => {
+            if(count == 0) {
+                idMessage.innerText = "사용 가능한 아이디입니다";
+                idMessage.classList.add("confirm"); // .confirm 스타일 적용
+                idMessage.classList.remove("error"); // .error 스타일 제거
+                checkObj.memberId = true; // 유효 O
+            } else {
+                idMessage.innerText = "이미 사용중인 아이디입니다";
+                idMessage.classList.add("error"); // .error 스타일 적용
+                idMessage.classList.remove("confirm"); // .confirm 스타일 제거
+                checkObj.memberId = false; // 유효 X
+
+            }
+        })
+        .catch(err => {console.log(err)});
+
+
+
+    } else{ // 유효하지 않은 경우(무효인 경우)
+        idMessage.innerText = "아이디 형식이 유효하지 않습니다";
+        idMessage.classList.add("error"); // .error 스타일 적용
+        idMessage.classList.remove("confirm"); // .confirm 스타일 제거
+
+        checkObj.memberId = false; // 유효 X
+    }
+});
 
 
 // ----------------- 비밀번호/비밀번호 확인 유효성 검사 ---------------------

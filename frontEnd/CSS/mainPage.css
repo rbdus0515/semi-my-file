@@ -7,46 +7,11 @@ body {
     padding: 0;
     font-family: 'Gowun Dodum', sans-serif;
     /* background-color: antiquewhite; */
-}
-
-button {
-    font-family: 'Gowun Dodum', sans-serif;
-    border: 0.5px solid #a6a6a6;
-    cursor: pointer;
-    background-color: #e6e6e6;
-}
-
-
-section {
-    /* border : 1px solid black; */
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* -------------------------------- */
-/* 메인페이지 최상단 */
-#main-container {
     position: relative;
 }
 
-#mainPage-img {
-    width: 100%;
-}
-
-#title-container {
-    font-size: 6.125rem;
-    position: absolute;
-    top: 20%;
-    left: 73%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    font-family: 'Aref Ruqaa', serif;
-}
-
-#info-btn {
-    width: 50px;
+#infoBtn {
+ width: 50px;
     position: fixed;
     top: 87.3%;
     left: 98.5%;
@@ -56,15 +21,57 @@ html {
     z-index: 1;
 }
 
-#top-btn {
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------- */
+/* ?????????? ???? */
+#main-container {
+    position: relative;
+    height : 100vh;
+}
+
+#mainPage-img {
+	width:100%	
+}
+
+#title-container {
+    font-size: 6.125rem;
+    position: absolute;
+    top: 20%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-family: 'Anton', sans-serif;
+}
+
+#title-container > span{
+	font-family: 'Exo', sans-serif;
+}
+
+#infoBtn {
     width: 50px;
     position: fixed;
-    top: 93.8%;
+    top: 85%;
     left: 98.5%;
     transform: translate(-50%, -50%);
     background-color: #d2d2d2;
     border-radius: 50px;
     z-index: 1;
+    cursor : pointer;
+}
+
+#topBtn {
+    width: 50px;
+    position: fixed;
+    top: 91.5%;
+    left: 98.5%;
+    transform: translate(-50%, -50%);
+    background-color: #d2d2d2;
+    border-radius: 50px;
+    z-index: 1;
+    cursor : pointer;
 }
 
 
@@ -74,11 +81,12 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     font-size: 1.25rem;
+    cursor : pointer;
 }
 
 #mainPage-btn2 {
@@ -87,11 +95,12 @@ html {
     border-radius: 30px;
     border: transparent;
     position: absolute;
-    top: 93.5%;
+    top: 91.5%;
     left: 90%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
     font-size: 1.25rem;
+    cursor : pointer;
 }
 
 
@@ -104,7 +113,7 @@ html {
 }
 
 /* ------------------------- */
-/* 메인페이지 추천 여행지 */
+/* ?????????? ??? ?????? */
 #recommend-place {
     display: flex;
     flex-direction: column;
@@ -126,6 +135,7 @@ html {
     width: 118px;
     height: 50px;
     border-radius: 10px;
+    border: none;
     font-size: 1.3125rem;
 }
 
@@ -139,12 +149,23 @@ html {
     justify-content: space-around;
 }
 
-#recommend-img > img {
+.recommend-place-btn {
     width: 640px;
     height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* 카테고리 리스트 버튼 기능 */
+.recommend-place-btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+
+.recommend-place-btn {
+    transition: 0.3s ease-in-out;
+}
+
+/* ???? ????? ??? ??? */
 .category {
     display: inline-block;
 }
@@ -177,7 +198,7 @@ img {
 }
 
 /* -------------------------- */
-/* 메인페이지 지역별 여행지 */
+/* ?????????? ?????? ?????? */
 #region-place {
     display: flex;
     flex-direction: column;
@@ -188,7 +209,7 @@ img {
 }
 
 .region-place-btn {
-    display: flex;
+    display: flex;  
     align-items: center;
     margin-top: 50px;
     margin-bottom: 24px;
@@ -230,15 +251,16 @@ button:hover {
     background-color: #868686;
     color: #fff;
     transition-duration: 0.3s;
+    cursor : pointer;
 }
 
-.place-move-motion > img:hover {
+.place-move-motion:hover {
     cursor: pointer;
     transform: scale(1.03);
     opacity: 0.8;
 }
 
-.place-move-motion > img {
+.place-move-motion {
     transition: 0.3s ease-in-out;
 }
 
